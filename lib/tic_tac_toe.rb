@@ -101,4 +101,13 @@ def over?
   false
 end
 
+def winner
+  winner = won?
+   if winner
+     @board[winner[0]]
+   else
+     nil
+   end
+end
+
 end
