@@ -54,9 +54,9 @@ def turn
     end
 end
 
-def turn_count(board)
+def turn_count
   counter = 0
-  board.each do |mark|
+  @board.each do |mark|
     if mark == "X" || mark == "O"
     counter += 1
   end
