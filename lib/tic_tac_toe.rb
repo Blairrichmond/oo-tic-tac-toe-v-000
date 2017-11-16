@@ -68,6 +68,14 @@ def current_player
   turn_count % 2 == 0 ? "X" : "O"
 end
 
-
+def won?
+  WIN_COMBINATIONS.each do |win|
+    if @board[win[0]] == "O" && @board[win[1]] == "O" && @board[win[2]] == "O" ||
+      @board[win[0]] == "X" && @board[win[1]] == "X" && @board[win[2]] == "X"
+      return win
+  end
+end
+false
+end
 
 end
