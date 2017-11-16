@@ -85,4 +85,11 @@ def full?
   false
 end
 
+def draw?
+  if full? && won? == false
+    return true
+  end
+  false
+end
+
 end
