@@ -92,4 +92,13 @@ def draw?
   false
 end
 
+def over?
+  if full?
+    return true
+  elsif won? || draw?
+    return true
+  end
+  false
+end
+
 end
